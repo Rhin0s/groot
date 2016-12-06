@@ -2,7 +2,9 @@ var Discord = require("discord.js");
 var bot = new Discord.Client();
 
 bot.on("message", msg => {
-    msg.channel.sendMessage("I am Groot!");
+	if (msg.content.startsWith("?")) {
+		msg.channel.sendMessage("I am Groot!");
+	}
 });
 
 bot.on('ready', () => {
