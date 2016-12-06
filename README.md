@@ -1,0 +1,3 @@
+# Mummelie
+
+Simple Discord Bot
